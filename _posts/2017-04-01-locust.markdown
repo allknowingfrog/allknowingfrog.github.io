@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "Wrangling the Swarm with Docker"
+date:   2017-04-01 03:00:00 -0600
+categories: docker locust
+---
+
+[Locust](http://locust.io) is an open-source, load-testing tool built on Python. I was recently tasked with setting up Locust to hammer away at Sycamore's new load-balancer, but when I set out to use an available utility server, I discovered that it didn't have the version of Python I needed. We don't generally work in Python&mdash;in fact, we don't have a single Python developer on the team&mdash;so I was reluctant to update or otherwise reconfigure the box in question just to support a Python tool.
+
+Enter Docker. If you haven't heard, [Docker](https://www.docker.com/what-docker) is a free tool for containerizing Linux processes. Containers are self-contained sandboxes that share operating system resources while providing totally configurable environments. You can use Docker to spin up a LAMP stack or a Rails app on your local machine without changing any of your local configurations. Plus, it's ridiculously fast. I run several Docker containers at a time on a modest laptop that, in my experience, can't even begin to handle Vagrant.
+
+By following Locust's quick start guide, I soon had a script ready to go despite my limited Python experience. On the first run, I encountered an alarming error, but I discovered a relevant GitHub [issue](https://github.com/locustio/locust/issues/310) and tweaked my install command accordingly. This is the entire Dockerfile:
+
+```
+FROM python:3
+
+RUN pip install locustio==0.8a2
+```
+
+There are a number of ways to interact with a Docker container, but my preferred method is to lanch with bash as my command and essentially treat it as an ssh session. Having built my new image as "locust" and dropped my script into a "locust" directory, I fired up a container.
+
+```
+sudo docker run -it --name locust -v ~/locust:/locust -p 8089:8089 locust bash
+```
+
+From this point, I continued to follow Locust's quick start guide from within the container, just as I would have with a normal installation.
+
+As a final note, remember that the `-i` flag is necessary when restarting the above container.
+```
+sudo docker start -i locust
+```
