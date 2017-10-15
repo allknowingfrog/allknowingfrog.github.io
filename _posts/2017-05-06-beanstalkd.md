@@ -2,7 +2,6 @@
 layout: post
 title:  "Asychronous Tasks with Beanstalkd"
 date:   2017-05-06 03:00:00 -0600
-categories: beanstalkd
 ---
 
 [Beanstalkd](https://kr.github.io/beanstalkd/) is a simple job-queueing server, first brought to my attention by the excellent [lornajane blog](https://lornajane.net/posts/2014/working-with-php-and-beanstalkd). Queues allow tasks to be run asynchronously: jobs are loaded onto the queue by user-driven scripts and removed for processing by worker scripts. This is useful for anything you don't want users waiting around on&mdash;in my case, sending out updates to integrations at Sycamore.
