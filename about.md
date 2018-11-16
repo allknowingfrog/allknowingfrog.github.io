@@ -6,8 +6,8 @@ permalink: /about/
 
 ### About Me
 
-My name is Jeremiah Bohling. By day, I am the lead developer for [Sycamore Education](http://sycamoreeducation.com), and by night, the backend developer for [Clinically Pertinent Resources](https://www.cprmedicine.com). I maintain LAMP stacks at Sycamore, Rails apps at CPR, and in my free time, I even dabble outside the realm of web development in things like Rust. All provide interesting learning opportunities and this is a place to share the best ones.
+My name is Jeremiah Bohling. By day, I am the lead developer for [Sycamore Education](http://sycamoreeducation.com), and by night, I'm approximately one-half of the [Steno CRM](http://stenocrm.com/) team. I maintain LAMP stacks at Sycamore and Rails apps on the side. In my free time, I even dabble outside the realm of web development.
 
 ### So, you're not Jon?
 
-Nope. We have a long-standing tradition of "passing the conch" during stand-up meetings at my day job. In theory, he who holds the conch holds the floor. In practice, the conch is just a flat playground ball, and we allow interruptions for worthwhile contributions. Jon may have the conch, but I have something important to say.
+Nope. We have an ancient tradition of "passing the conch" during stand-up meetings at my day job. He who holds the conch holds the floor, but we allow interruptions for worthwhile contributions. These are my worthwhile contributions.
