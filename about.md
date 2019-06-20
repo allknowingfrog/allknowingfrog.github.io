@@ -6,8 +6,8 @@ permalink: /about/
 
 ### About Me
 
-My name is Jeremiah Bohling. By day, I am the lead developer for [Sycamore Education](http://sycamoreeducation.com), and by night, I'm approximately one-half of the [Steno CRM](http://stenocrm.com/) team. I maintain LAMP stacks at Sycamore and Rails apps on the side. In my free time, I even dabble outside the realm of web development.
+My name is Jeremiah Bohling, and I am a web developer. Ruby on Rails is my passion, but I have maintained LAMP stacks in the past along with a variety of scripting and maintenance tools. I am approximately one-third of Arctos Technologies, which is currently focused on [Halltogether](http://www.halltogether.io).
 
 ### So, you're not Jon?
 
-Nope. We have an ancient tradition of "passing the conch" during stand-up meetings at my day job. He who holds the conch holds the floor, but we allow interruptions for worthwhile contributions. These are my worthwhile contributions.
+Nope. We organized stand-up meetings around a conch at my first programming job. He who held the conch held the floor, but we allowed interruptions for worthwhile contributions. I hope these interruptions are worthwhile.
